@@ -18,17 +18,13 @@ public:
             if(a_size>=0) {
                 ch1 = a[a_size--] -'0';
             }
-            else{
-                a_size--;
-            }
+           
          
             
             if(b_size>=0) {
                 ch2 = b[b_size--] -'0';
             }
-            else{
-                b_size--;
-            }
+           
             
             sum = ch1+ch2+carry;
             result.append(to_string(sum%2));
