@@ -8,6 +8,14 @@ public:
         int right = *max_element(piles.begin(), piles.end());
         int hours = 0;
         int div = 0;
+        /* 
+            There we're going to initialize a range from 1 to the max number in the arary, the entire range we have. Going all the way from 1 to the max value.
+            
+            left = 1;
+            right = max(piles);
+            
+            then, we search to get the optimized value.
+        */
         
         while(left<=right){
             mid = left + (right - left) / 2;
